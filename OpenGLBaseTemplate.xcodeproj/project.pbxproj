@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2130928C1B4D8D4B00C08521 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 2130928B1B4D8D4B00C08521 /* Readme.md */; };
 		21C8E1401B4D8AF8006B9E8D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21C8E13F1B4D8AF8006B9E8D /* main.cpp */; };
+		21C8E14D1B4D8BAA006B9E8D /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E14B1B4D8BAA006B9E8D /* libGLEW.a */; };
+		21C8E14E1B4D8BAA006B9E8D /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E14C1B4D8BAA006B9E8D /* libglfw3.a */; };
+		21C8E1501B4D8BDE006B9E8D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E14F1B4D8BDE006B9E8D /* IOKit.framework */; };
+		21C8E1521B4D8BE2006B9E8D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E1511B4D8BE2006B9E8D /* Cocoa.framework */; };
+		21C8E1541B4D8BE9006B9E8D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E1531B4D8BE9006B9E8D /* OpenGL.framework */; };
+		21C8E1561B4D8BEE006B9E8D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E1551B4D8BEE006B9E8D /* Carbon.framework */; };
+		21C8E1581B4D8BF3006B9E8D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C8E1571B4D8BF3006B9E8D /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2130928B1B4D8D4B00C08521 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		21C8E13C1B4D8AF8006B9E8D /* OpenGLBaseTemplate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLBaseTemplate; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C8E13F1B4D8AF8006B9E8D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21C8E14B1B4D8BAA006B9E8D /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = lib/libGLEW.a; sourceTree = "<group>"; };
+		21C8E14C1B4D8BAA006B9E8D /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = lib/libglfw3.a; sourceTree = "<group>"; };
+		21C8E14F1B4D8BDE006B9E8D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		21C8E1511B4D8BE2006B9E8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		21C8E1531B4D8BE9006B9E8D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		21C8E1551B4D8BEE006B9E8D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		21C8E1571B4D8BF3006B9E8D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +48,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C8E1581B4D8BF3006B9E8D /* CoreVideo.framework in Frameworks */,
+				21C8E1561B4D8BEE006B9E8D /* Carbon.framework in Frameworks */,
+				21C8E1541B4D8BE9006B9E8D /* OpenGL.framework in Frameworks */,
+				21C8E1521B4D8BE2006B9E8D /* Cocoa.framework in Frameworks */,
+				21C8E1501B4D8BDE006B9E8D /* IOKit.framework in Frameworks */,
+				21C8E14D1B4D8BAA006B9E8D /* libGLEW.a in Frameworks */,
+				21C8E14E1B4D8BAA006B9E8D /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +64,7 @@
 		21C8E1331B4D8AF8006B9E8D = {
 			isa = PBXGroup;
 			children = (
+				21C8E1461B4D8B65006B9E8D /* Frameworks */,
 				21C8E13E1B4D8AF8006B9E8D /* OpenGLBaseTemplate */,
 				21C8E13D1B4D8AF8006B9E8D /* Products */,
 			);
@@ -58,7 +82,23 @@
 			isa = PBXGroup;
 			children = (
 				21C8E13F1B4D8AF8006B9E8D /* main.cpp */,
+				2130928B1B4D8D4B00C08521 /* Readme.md */,
 			);
+			path = OpenGLBaseTemplate;
+			sourceTree = "<group>";
+		};
+		21C8E1461B4D8B65006B9E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21C8E1571B4D8BF3006B9E8D /* CoreVideo.framework */,
+				21C8E1551B4D8BEE006B9E8D /* Carbon.framework */,
+				21C8E1531B4D8BE9006B9E8D /* OpenGL.framework */,
+				21C8E1511B4D8BE2006B9E8D /* Cocoa.framework */,
+				21C8E14F1B4D8BDE006B9E8D /* IOKit.framework */,
+				21C8E14B1B4D8BAA006B9E8D /* libGLEW.a */,
+				21C8E14C1B4D8BAA006B9E8D /* libglfw3.a */,
+			);
+			name = Frameworks;
 			path = OpenGLBaseTemplate;
 			sourceTree = "<group>";
 		};
@@ -118,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2130928C1B4D8D4B00C08521 /* Readme.md in Sources */,
 				21C8E1401B4D8AF8006B9E8D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +246,16 @@
 		21C8E1441B4D8AF8006B9E8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OpenGLBaseTemplate/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLBaseTemplate",
+					"$(PROJECT_DIR)/OpenGLBaseTemplate/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +263,16 @@
 		21C8E1451B4D8AF8006B9E8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/OpenGLBaseTemplate/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLBaseTemplate",
+					"$(PROJECT_DIR)/OpenGLBaseTemplate/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +296,7 @@
 				21C8E1451B4D8AF8006B9E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
