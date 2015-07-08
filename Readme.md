@@ -1,4 +1,4 @@
-# OpenGL - Base
+# OpenGL - Base Template (Mac OSX)
 
 This a project base template for building OpenGL 3 applications for Mac using GLFW and GLEW. 
 
