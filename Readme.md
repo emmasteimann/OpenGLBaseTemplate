@@ -7,5 +7,4 @@ This a project base template for building OpenGL 3 applications for Mac using GL
 - Frameworks:fefe
 -  Cocoa, Carbon, IOKit, OpenGL, CoreVideo
 - Libraries (`libGLEW.a`, `libglfw.a`)
-- Include/ (`GL/glew.h`, `GL/glxew.h`, `GL/wglew.h`, `GLFW/glfw3.h`, `GLFW/glfw3native.h`
-- 
+- Include/ (`GL/glew.h`, `GL/glxew.h`, `GL/wglew.h`, `GLFW/glfw3.h`, `GLFW/glfw3native.h`)
